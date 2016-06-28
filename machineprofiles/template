@@ -1,0 +1,20 @@
+"VirtualEdgeMachine" :  {
+	"uuid": "...",
+	"name": "",
+	"capabilities": [ {
+		"DataPoint": {
+		   "resource": {
+		   		"id": "..",
+		   		"description": "..",
+		   		
+		   		},		
+		   "datatype": "",
+		   "unit": "",
+		   "API": {"interface": "<the API call>",
+		           "parameters" : [{"name":"", "type":"", "metric"}*]
+		           }
+			"metrics" : [{"<metricname>" : "
+	  },
+	  {...}
+	]
+}
