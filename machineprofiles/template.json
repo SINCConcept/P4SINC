@@ -11,9 +11,9 @@
 		   "datatype": "",
 		   "unit": "",
 		   "API": {"interface": "<the API call>",
-		           "parameters" : [{"name":"", "type":"", "metric"}*]
+		           "parameters" : [{"name":"", "type":"", "metric"}]
 		           }
-			"metrics" : [{"<metricname>" : "
+			"metrics" : [{"<metricname>" : "", "type": ""}]
 	  },
 	  {...}
 	]
