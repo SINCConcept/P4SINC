@@ -14,7 +14,7 @@
 		           "parameters" : [{"name":"", "type":"", "metric"}]
 		           },
 		    "metrics" : [{"<metricname>" : "", "type": ""}]
-	  },
+	  }},
 	  {"ControlPoint" : {".."}}
 	]
 }
