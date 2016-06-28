@@ -12,9 +12,9 @@
 		   "unit": "",
 		   "API": {"interface": "<the API call>",
 		           "parameters" : [{"name":"", "type":"", "metric"}]
-		           }
-			"metrics" : [{"<metricname>" : "", "type": ""}]
+		           },
+		    "metrics" : [{"<metricname>" : "", "type": ""}]
 	  },
-	  {...}
+	  {}
 	]
 }
