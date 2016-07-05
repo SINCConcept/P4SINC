@@ -1,0 +1,31 @@
+This directory contains following subfolders:
+
++ libs: required Java libraries to run the IOT/secured-IOT apps
++ original-IOT-apps: original IOT apps in jar files without modification and the Daemon
++ secured-IOT-apps: the apps that have been woven with policies
++ utils: the policy utilities including policy manager
+
+RUN
+
+1. Run the daemons
+
+a. SoftwareDefaultGateway Daemon: The IOT applications need to communicate with the SoftwareDefaultGateway Daemon therefore this service must run first. To run this, change the the current directory to ./original-IOT-apps/G2021Daemon and run the script 
+$./startDaemon.sh
+(This script call Java to execute this daemon:
+$java -Djava.util.logging.config.file=./logging.properties -jar G2021Daemon.jar)
+
+b. Policy Manager: Every secured IoT apps must register to this service so that the apps can be controlled. Therefore, this daemon must be started before secured IoT apps can be exectuted. To run this, change the the current directory to ./utils and run the script 
+$./startPolicyManager.sh
+(This script call Java to execute the monitor:
+$java -cp "policyutils.jar" policy.utils.GatewayPolicyManager) 
+
+2. Run the secured IOT apps
+Change the directory to ./secured-IOT-apps and run the corresponding scripts for each app:
+$run*.sh
+
+The scripts invoke Java environment and runtime libraries to execute an application. Typically, each app will be called by the following format:
+$java -cp ".:../libs/aspectjrt.jar:SoftwareDefinedGateway.jar" -cp "../utils/policyutils.jar:../libs/minimal-json-0.9.4.jar:secured-[IOT-app].jar" -javaagent:../libs/aspectjweaver.jar path/to/the/main/class
+
+
+
+
