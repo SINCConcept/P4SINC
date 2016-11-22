@@ -1,0 +1,1 @@
+java -cp tools/aspectjrt.jar -javaagent:tools/aspectjweaver.jar  -jar Instrumented-App.jar

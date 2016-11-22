@@ -1,0 +1,10 @@
+Instrumentation tools:
+tools: required tools and libs
+policy.json: policy specification inputs
+api-maps.json: API map
+
+To run the instrumentation tool:
+$./instrument.sh <input-jar> 
+
+To run the instrumented app:
+$./run.sh

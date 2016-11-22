@@ -1,0 +1,2 @@
+{ "apimap": [{"data_read": ["com.raspberrypi.Sensor.read(..)"]},{"data_read2": ["com.raspberrypi.Sensor.read(..)"]}]
+} 
