@@ -1,0 +1,30 @@
+{"SoftwareDefinedMachineProfile": {
+  "uuid": "123",
+  "name": "Raspberry1",
+  "capabilities": [{
+	"capability": {
+	   "type": "DataPoint",
+	   "resource": {
+		"id": "DataPoint.get",
+		"description": "Get data from a buffer"
+	},
+	"returnType": "String",
+	"interface": {
+		"API": "com.sinc.resources.DataPoint.get",
+		"parameters": [{
+		   "name": "BufferName",
+		   "type": "String"
+		}]
+	}
+   },
+   "capability": {
+	"type": "ControlPoint",
+	"resource": {
+		"id": "...",
+		"description": "..."
+	}
+
+    }
+   }]
+  }
+}
