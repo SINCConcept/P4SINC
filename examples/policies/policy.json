@@ -1,0 +1,8 @@
+{
+policies":[{"action": "data_read",
+				"metrics" : [{"times": {"value" : "100" : "violation_responses" : {"message":"Data is read more than the allowed times", "action" : "suppression"}}}]},
+		{"action": "data_write",
+				"metrics" : {{"amount": {"value" : "100B" : "violation_responses" : {"message":"Data is written more than the allowed amount", "action" : "stop" }}}]}]
+}
+
+

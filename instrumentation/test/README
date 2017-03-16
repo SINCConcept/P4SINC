@@ -1,10 +1,20 @@
 Instrumentation tools:
 tools: required tools and libs
 policy.json: policy specification inputs
-api-maps.json: API map
+api-map.json: API map
 
 To run the instrumentation tool:
-$./instrument.sh <input-jar> 
+$./instrument.sh <input.jar> api-map.json policy.json
+
+This will instrument the app and generate the instrumented app 
+in Instrumented-App.jar
 
 To run the instrumented app:
-$./run.sh
+$./run.sh Instrumented-App.jar
+
+To see the messages sent to mqttclound, install mosquitto_sub and run
+
+$./mosquitto_cloud.sh to see messages from the app (Client.jar) sent to the cloud 
+$./mosquitto_error_server.sh to see the error messages sent from the instrumented app.
+
+
